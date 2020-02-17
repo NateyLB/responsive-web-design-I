@@ -116,11 +116,11 @@ header nav a:hover{
 /*the innovation section*/
 
 .first{
-	display:flex;
-	justify-content:space-between;
-	align-items: center;
-	width:100%;
-	height:45vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 65vh
 }
 
 .bigHeader{
