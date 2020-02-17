@@ -212,8 +212,95 @@ address{
 
 footer{
 	display:flex;
-	justify-content: center;
+	justify-content:center;
 	align-items: flex-end;
     height: 6vw;
 }
+/*tablet */
+@media (max-width:800px){
+    .first img{
+        display:none;
+    }
 
+    .first{
+        justify-content:center;
+        height:55vh;
+    }
+
+    .bigHeader{
+        padding-right:0;
+    }
+
+    .second{
+        height:20vh;
+    }
+
+    .third{
+        height:27.5vh;
+    }
+
+    address{
+        height:25vh;
+    }
+}
+
+/*mobile*/
+
+@media(max-width:500px){
+    nav{
+        display:flex;
+        flex-direction:column-reverse;
+        justify-content:center;
+        position: relative;
+        background-color: white;
+    }
+
+    .links{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .links a{
+        border-top:1px solid gray;
+    }
+
+    #contactBorder{
+        border-bottom:1px solid gray;
+    }
+
+    header nav a{
+        height:5vh;
+        align-items:center;
+    }
+
+    header img{
+        border:0px solid white;
+    }
+
+    .first{
+        height:30vh;
+    }
+
+    .get{
+        width: 50%;
+    }
+
+    .second{
+        flex-direction:column;
+        height:40vh;
+    }
+
+    .second div , .third div{
+        width: 90%;
+        height: 15vh;
+    }
+
+    .third{
+        flex-direction:column;
+        height:50vh;
+    }
+
+    .third div{
+
+    }
+}
