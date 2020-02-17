@@ -216,6 +216,90 @@ footer{
 	align-items: flex-end;
     height: 6vw;
 }
+
+/* start of services page*/
+
+.services{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 32vw;
+}
+
+.services div{
+	width:90%
+}
+
+.services h1{
+	font-size:2vw;
+}
+
+.services-header-img{
+	width: 100%;
+}
+/* gallery of servies*/
+.gallery{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	align-items: center;
+	height:75vw;
+}
+
+.gallery div{
+	width: 47%;
+	height: 17vw;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-left: 2vw;
+	background-color: rgba(76, 76, 76, 0.137);
+	border:1px solid black;
+}
+
+.gallery .button{
+	height: 3vw;
+    width: 9vw;
+    padding: 3% 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+/*some facts section*/
+
+.facts{
+	display:flex;
+	justify-content: space-between;
+	height: 38vw;
+	align-items: center;
+}
+
+.facts div{
+	width: 43%;
+}
+.facts div img{
+	width:100%
+}
+.thingList{
+	display:flex;
+	flex-direction: column;
+	width:40%;
+	justify-content: space-evenly;
+	height: 38vw;
+	
+}
+
+ul{
+	display:flex;
+	flex-direction: column;
+	height:10vw;
+	justify-content: space-evenly;
+	list-style-type: square;
+	padding-left:4% ;
+}
+
 /*tablet */
 @media (max-width:800px){
     .first img{
@@ -242,7 +326,25 @@ footer{
     address{
         height:25vh;
     }
+
+    .services{
+        height:55vh;
+    }
+
+    .gallery{
+        height:120vh;
+    }
+
+    .gallery div{
+        height:30vh;
+    }
+
+    .gallery .button{
+        height:5vh;
+        width:15vw;
+    }
 }
+
 
 /*mobile*/
 
@@ -289,7 +391,7 @@ footer{
         flex-direction:column;
         height:40vh;
     }
-
+/*container resize for all info sections*/
     .second div , .third div{
         width: 90%;
         height: 15vh;
@@ -300,7 +402,34 @@ footer{
         height:50vh;
     }
 
-    .third div{
-
+    .services h1{
+        font-size:5vw;
     }
+
+    .gallery{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 220vh;
+        justify-content: space-evenly;
+    }
+
+    .gallery div{
+        width: 100%;
+    }
+
+    .facts div img{
+        display:none;
+    }
+
+    .facts .thingList{
+        flex-direction: column;
+        width: 100%;
+        height: 50vw;
+}
+    }
+
+    .facts{
+        height:50vw;
+    }
+
 }
