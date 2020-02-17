@@ -130,7 +130,7 @@ header nav a:hover{
     align-items: center;
     height: 42vh;
     font-size: 7vw;
-    padding-right: 10vw;
+    padding-right: 20vw;
 
 }
 
@@ -179,7 +179,7 @@ header nav a:hover{
 }
 
 .middle-img{
-	width:91vw;
+	width:90vw;
 }
 
 /*services section*/
